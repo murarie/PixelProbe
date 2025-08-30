@@ -4,49 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PixelProbe</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div>
-            <span>pixelProbe</span>
-            <nav>
+        <div class="conainer header-inner">
+            <a class="logo" href="#">PixelProbe</a>
+            <nav class="main-nav">
                 <a href="#">Home</a>
                 <a href="#startButton">Start Test</a>
+                <a href="#instructions">Instructions</a>
                 <a href="#">About</a>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
                 <button id="modeToggle">Dark/Light mode</button>
             </nav>
         </div>
     </header>
-    <h1>PixelProbe</h1>
 
-    <h1>Become the Pixel Detective</h1>
+     
+    <main>
+        <section class="hero" aria-label="Hero">
+            <h1>Become the Pixel Detective</h1>
+            <p class="lead">
+                Meet PixelProbe — your screen's personal detective! Cycle through solid colors, hunt down stubborn pixels, and see if your display is truly flawless.
 
-    <p>Meet PixelProbe — your screen's personal detective! Cycle through solid colors, hunt down stubborn pixels, and see if your display is truly flawless.</p>
+            </p>
 
-    <div>
-        <img src="img/ppred.png" alt="a dead pixel detected in solid color">
-        <img src="img/ppgreen.png" alt="a dead pixel detected in solid color">
-        <img src="img/ppblue.png" alt="a dead pixel detected in solid color">
-        <img src="img/ppwhite.png" alt="a dead pixel detected in solid color">
-        <img src="img/ppblack.png" alt="a dead pixel detected in solid color">
+            <div id="imgs" aria-hidden="true">
+                <img src="img/ppred.png" alt="a dead pixel detected in solid color">
+                <img src="img/ppgreen.png" alt="a dead pixel detected in solid color">
+                <img src="img/ppblue.png" alt="a dead pixel detected in solid color">
+                <img src="img/ppwhite.png" alt="a dead pixel detected in solid color">
+                <img src="img/ppblack.png" alt="a dead pixel detected in solid color">
 
-    </div>
+            </div>
 
-    <h2>Instructions</h2>
+            <button id="startButton">Start Test</button>
 
-    <ul>
-        <li>1. Maximize your browser window or press <b>F11</b> to enter full-screen mode.</li>
-        <li>2. Hit the button below to launch the pixel test.</li>
-        <li>3. Click anywhere on the screen to cycle through the test colors.</li>
-        <li>4. Look closely for any pixels that refuse to change color — those might be stuck or dead.</li>
-        <li>5. Bonus tip: Don't panic if you find one... That's just your monitor's birthmark.</li>
 
-    </ul>
+        </section>
 
-    <button id="startButton">Start Test</button>
+        <section id="instructions" class="container">
+        <h2>Instructions</h2>
+        <ul>
+            <li>1. Maximize your browser window or press <b>F11</b> to enter full-screen mode.</li>
+            <li>2. Hit the button below to launch the pixel test.</li>
+            <li>3. Click anywhere on the screen to cycle through the test colors.</li>
+            <li>4. Look closely for any pixels that refuse to change color — those might be stuck or dead.</li>
+            <li>5. Bonus tip: Don't panic if you find one... That's just your monitor's birthmark.</li>
 
-    <footer id="Contact">
+        </ul>
+
+        </section>
+    </main>
+
+
+    <footer id="contact">
         <p>Made with ❤️ by <b>Murari</b>.</p>
         <a href="mailto:illaddthislater@gmail.com">e-mail</a>
         <a href="https://github.com/murarie">github</a>
