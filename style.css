@@ -199,3 +199,73 @@ footer a:hover { text-decoration: underline; }
   .main-nav a { display: none; }
   #imgs img { width: 90px; height: 60px; }
 }
+
+
+
+
+/* Dark/Light mode */
+
+
+body.dark-mode {
+  background: #0f172a;   
+  color: #e6eef8;        
+  transition: background-color 0.25s ease, color 0.25s ease;  
+}
+
+ 
+body.dark-mode header {
+  background: #061a42;                     
+  border-bottom: 2px solid #334155;       
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);   
+}
+
+
+body.dark-mode .main-nav a {
+  color: #e2e8f0;    
+}
+body.dark-mode .main-nav a:hover {
+  color: var(--accent2); 
+}
+
+body.dark-mode #modeToggle {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);  
+}
+
+body.dark-mode .hero h1 {
+  color: var(--accent2);  
+}
+body.dark-mode .hero .lead {
+  color: #cbd5e1;  
+}
+
+body.dark-mode #imgs img {
+  border: 2px solid #334155; 
+  box-shadow: none;          
+}
+
+body.dark-mode #startButton {
+  box-shadow: 0 8px 22px rgba(0,0,0,0.35); 
+}
+
+
+body.dark-mode #instructions {
+  background: #1e293b; 
+}
+body.dark-mode #instructions h2 {
+  color: #f9fafb; 
+}
+body.dark-mode #instructions ul li {
+  background: #334155;       
+  border: 1px solid #475569; 
+  color: #f1f5f9;            
+}
+
+
+body.dark-mode footer {
+  background: #020617;  
+  color: #cbd5e1;       
+}
+body.dark-mode footer a {
+  color: var(--accent1); 
+}
+
